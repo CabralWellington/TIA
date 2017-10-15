@@ -1,0 +1,46 @@
+.button{
+    -fx-background-color: white;
+    -fx-border-width: 2;
+    -fx-text-fill:  #599dff;
+    -fx-background-radius: 41;
+}
+.button:hover{
+    -fx-border-color: #599dff;
+    -fx-background-color: none;
+    -fx-border-radius: 35;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+}
+
+
+.list-view {
+    -fx-background-color: transparent;   
+    -fx-font-family: "KG Second Chances Sketch";
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-font-size: 35;
+
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: transparent;
+    -fx-text-fill: #599dff;
+}
+.list-view .list-cell:odd {
+    -fx-background-color: transparent;
+    -fx-text-fill: #599dff;
+}
+
+
+.list-view .list-cell:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #599dff;
+}
+
+.list-view .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+
+
