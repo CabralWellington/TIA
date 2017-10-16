@@ -31,28 +31,37 @@ public class FXMLDocumentController implements Initializable {
     private Label label;
 
     @FXML
-    private Button btn_iniciar, btn_curso;
+    private Button btn_iniciar, btn_curso, btn_back_curso, btn_back_school, btn_back_iniciar;
 
     @FXML
-    private ListView list_school;
+    private ListView list_school, list_curso;
 
     @FXML
     private AnchorPane h_iniciar, h_school, h_curso;
 
     @FXML
     private void handleButtonAction(Event event) {
-        if (event.getTarget() == btn_iniciar) {
+        if (event.getTarget() == btn_iniciar || event.getTarget() == btn_back_school) {
             mudaTela("h_school");
-            List<String> values = Arrays.asList("Fametro", "Fucapi", "Uninorte");
+            List<String> values = Arrays.asList("Fametro", "Fucapi", "Uninorte", "Fucapi", "Uninorte", "Fucapi", "Uninorte", "Fucapi", "Uninorte", "Fucapi", "Uninorte", "Fucapi", "Uninorte", "Fucapi", "Uninorte");
             list_school.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
             list_school.setItems(FXCollections.observableList(values));
 
         }
 
-        if (event.getTarget() == btn_curso) {
-            mudaTela("h_curso");
-            System.out.println(list_school.getSelectionModel().getSelectedItem().toString());
-            
+        if (event.getTarget() == btn_curso || event.getTarget() == btn_back_curso) {
+
+            if (list_school.getSelectionModel().getSelectedItem().toString() != "" || list_school.getSelectionModel().getSelectedItem().toString() != null) {
+                mudaTela("h_curso");
+                List<String> values = Arrays.asList("Administração", "Sistemas de Informação", "Direito", "Contabilidade");
+                list_curso.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+                list_curso.setItems(FXCollections.observableList(values));
+            }
+
+        }
+
+        if (event.getTarget() == btn_back_iniciar) {
+            mudaTela("h_inciar");
         }
 
     }
@@ -75,6 +84,12 @@ public class FXMLDocumentController implements Initializable {
                 h_school.setVisible(false);
                 h_curso.setVisible(true);
                 break;
+
+            case "h_inciar":
+                h_iniciar.setVisible(true);
+                h_school.setVisible(false);
+                h_curso.setVisible(false);
+
         }
     }
 
