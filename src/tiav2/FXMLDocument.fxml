@@ -57,7 +57,7 @@
             </ImageView>
          </children>
       </Group>
-      <Pane layoutX="9.0" layoutY="69.0" opacity="0.65" prefHeight="721.0" prefWidth="461.0" style="-fx-border-color: black; -fx-border-width: 3;" />
+      <Pane layoutX="9.0" layoutY="69.0" opacity="0.65" prefHeight="721.0" prefWidth="460.0" style="-fx-border-color: black; -fx-border-width: 3;" />
       <AnchorPane fx:id="h_iniciar" layoutX="20.0" layoutY="80.0" prefHeight="720.0" prefWidth="460.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="70.0">
          <children>
             <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="721.0" prefWidth="461.0">
@@ -116,6 +116,30 @@
                      </font>
                   </Button>
                   <Button fx:id="btn_periodo" alignment="CENTER" layoutX="240.0" layoutY="628.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="79.0" prefWidth="188.0" text="OK" textFill="#599dff" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="KG Second Chances Sketch" size="38.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_curso1" layoutX="20.0" layoutY="80.0" prefHeight="720.0" prefWidth="460.0" stylesheets="@estilo.css" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Pane prefHeight="721.0" prefWidth="461.0">
+               <children>
+                  <ListView fx:id="list_curso1" layoutX="34.0" layoutY="68.0" onMouseClicked="#handleButtonAction" onTouchPressed="#handleButtonAction" prefHeight="542.0" prefWidth="394.0" />
+                  <Label fx:id="label121" layoutX="74.0" prefHeight="79.0" prefWidth="376.0" text="Selecione o curso" textAlignment="JUSTIFY" textFill="#599dff">
+                     <font>
+                        <Font name="KG Second Chances Sketch" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_back_school1" alignment="CENTER" layoutX="34.0" layoutY="628.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="79.0" prefWidth="188.0" text="Voltar" textFill="#599dff" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="KG Second Chances Sketch" size="38.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_periodo1" alignment="CENTER" layoutX="240.0" layoutY="628.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="79.0" prefWidth="188.0" text="OK" textFill="#599dff" textOverrun="CENTER_ELLIPSIS">
                      <font>
                         <Font name="KG Second Chances Sketch" size="38.0" />
                      </font>

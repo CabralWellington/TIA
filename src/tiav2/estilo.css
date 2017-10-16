@@ -4,7 +4,7 @@
     -fx-text-fill:  #599dff;
     -fx-background-radius: 41;
 }
-.button:hover{
+.button:active{
     -fx-border-color: #599dff;
     -fx-background-color: none;
     -fx-border-radius: 22;
