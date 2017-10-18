@@ -24,7 +24,7 @@ public class TIAv2 extends Application {
         
         Scene scene = new Scene(root);
        
-        scene.setCursor(Cursor.NONE);
+        //scene.setCursor(Cursor.NONE);
         stage.setScene(scene);
         stage.setFullScreen(true);
         stage.show();
